@@ -1,0 +1,29 @@
+---
+import "./src/styles/global.css";
+import Header from "../components/header.astro";
+import Preparation from "../components/preparation.astro";
+import Ingredients from "../components/ingredients.astro";
+import Instrurctions from "../components/instructions.astro";
+import Nutrition from "../components/nutrition.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+
+    <title>Astro</title>
+  </head>
+  <body class=" font-Outfit text-Stone-600 bg-amber-100">
+   
+	<main class="bg-White min-w-[375px] px-8 mb-10 sm:rounded-xl sm:py-8 sm:max-w-[700px] sm:mx-auto sm:mt-12 transition-all duration-300">
+		<Header />
+		<Preparation />
+		<Ingredients />
+		<Instrurctions />
+		<Nutrition />
+      
+    </main>
+  </body>
+</html>

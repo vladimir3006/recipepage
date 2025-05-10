@@ -1,0 +1,59 @@
+---
+const steps = [
+  {
+    key: 1,
+    step: "Beat the eggs",
+    description:
+      "In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.",
+  },
+  {
+    key: 2,
+    step: "Heat the pan",
+    description:
+      "Place a non-stick frying pan over medium heat and add butter or oil.",
+  },
+  {
+    key: 3,
+    step: "Cook the omelette",
+    description:
+      "Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.",
+  },
+  {
+    key: 4,
+    step: "Add fillings (optional)",
+    description:
+      "When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.",
+  },
+  {
+    key: 5,
+    step: "Fold and serve",
+    description:
+      "As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.",
+  },
+  {
+    key: 6,
+    step: "Enjoy",
+    description: "Serve hot, with additional salt and pepper if needed.",
+  },
+];
+---
+
+<section class="mt-8">
+  <h2 class="text-3xl font-Young-Serif text-Brown-800 mb-6">Ingredients</h2>
+
+  {
+    steps.map((s) => (
+      <div class="flex  gap-4">
+        <p>
+          <span class="font-bold  text-Brown-800">{s.key}.</span>
+        </p>
+        <p class="mb-2">
+          <span class="font-bold">{s.step}:</span>
+          <span>{s.description}</span>
+        </p>
+      </div>
+    ))
+  }
+
+  <hr class="border-t-1 border-Stone-600/30 my-12" />
+</section>

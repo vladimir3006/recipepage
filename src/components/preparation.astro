@@ -1,0 +1,39 @@
+---
+const preparation = [
+  {
+    key: 1,
+    item: "Total:",
+    description: "Approximately 10 minutes",
+  },
+  {
+    key: 2,
+    item: "Preparation:",
+    description: "5 minutes",
+  },
+  {
+    key: 3,
+    item: "Cooking:",
+    description: "5 minutes",
+  },
+];
+---
+
+<section class="mt-8">
+  <div class="bg-Rose-50 p-8 rounded-xl">
+    <h3 class="text-Rose-800 font-semibold text-2xl mb-4">Preparation time</h3>
+
+    {
+      preparation.map((i) => (
+        <div class="flex items-center gap-8">
+          <p>
+            <span class="font-bold text-3xl text-Brown-800">·</span>
+          </p>
+          <p>
+            <span class="font-bold">{i.item}</span>
+            <span>{i.description}</span>
+          </p>
+        </div>
+      ))
+    }
+  </div>
+</section>

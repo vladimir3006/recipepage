@@ -1,0 +1,29 @@
+---
+const list = [
+    "2-3 large eggs",    
+    "Salt, to taste",   
+     "Pepper, to taste",    
+    "1 tablespoon of butter or oil",   
+     " Optional fillings: cheese, diced  vegetables, cooked meats, herbs"    
+];
+---
+<section class="mt-8">
+    <h2 class="text-3xl font-Young-Serif text-Brown-800 mb-6">Instructions</h2>
+
+    {
+        list.map((i) => (
+          <div class="flex items-center gap-8">
+            <p>
+              <span class="font-bold text-3xl text-Brown-800">·</span>
+            </p>
+            <p>
+              <span class="">{i}</span>              
+            </p>
+          </div>
+        ))
+      }
+
+<hr class="border-t-1 border-Stone-600/30 my-12" />
+  
+
+</section>
