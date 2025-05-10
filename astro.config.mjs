@@ -9,5 +9,5 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
    site: 'https://vladmir3006.github.io',
-  base: '/recipepage'
+  base: 'recipepage'
 });
